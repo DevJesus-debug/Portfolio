@@ -339,7 +339,7 @@ main .intro-wrap .text-cover .text.three{
    transform: translate(0,0);
 }
 
-.content-cont .info-wrap{
+ .info-wrap{
   width: 90%;
   margin: 25px auto;
   height: 630px;
@@ -364,7 +364,7 @@ main .intro-wrap .text-cover .text.three{
 
 
 .info-wrap .about-me-cont{
-  background-color: rgba(255, 255, 255, 0.941);
+  background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 40px 20px 0 20px;
@@ -406,9 +406,26 @@ main .intro-wrap .text-cover .text.three{
     z-index: 1;
     position: absolute;
     transform: translateX(100%);
-    background-color: white;
+    background-color: blue;
+    transition: all .7s ease-in;
+ }
+
+ .info-wrap .projects-cont.active-page{
+    transform: translateX(0);
  }
 
 
+ .info-wrap .contact-cont{
+    padding: 20px;
+    bottom: 0;
+    inset: 0;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(100%);
+    background-color: red;
+    transition: all .7s ease-in;
+ }
 
-
+ .info-wrap .contact-cont.active-page{
+    transform: translateX(0);
+ }
