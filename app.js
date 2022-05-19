@@ -18,28 +18,27 @@ hamburger.addEventListener("click", ()=>{
   });
 })
 
-console.log(infoWrapChildren)
 
-  for(let i = 0; i < navButtons.length; i++){
-      navButtons[i].addEventListener("click",()=>{
-         if(navButtons[i].innerText === "Projects" ){
-            infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
-            projectsPage.classList.add("active-page")
-            infoWrap.classList.add("projects-height")
-         }else if(navButtons[i].innerText === "About me"){
-            infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
-            infoWrap.classList.remove("projects-height")
-         }else if(navButtons[i].innerText === "Contact me"){
-            infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
-            contactPage.classList.add("active-page")
-            infoWrap.classList.remove("projects-height")
-         }
-      })
-    }
+for(let i = 0; i < navButtons.length; i++){
+    navButtons[i].addEventListener("click",()=>{
+        if(navButtons[i].innerText === "Projects" ){
+          infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
+          projectsPage.classList.add("active-page")
+          infoWrap.classList.add("projects-height")
+        }else if(navButtons[i].innerText === "About me"){
+          infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
+          infoWrap.classList.remove("projects-height")
+        }else if(navButtons[i].innerText === "Contact me"){
+          infoWrapChildren.forEach(page=>{page.classList.remove("active-page")})
+          contactPage.classList.add("active-page")
+          infoWrap.classList.remove("projects-height")
+        }
+    })
+  }
 
 
 function createBubbles(){
-    for(let i = 0; i < 15 ;i++){
+    for(let i = 0; i < 16 ;i++){
         const bubbles = document.createElement("div");
           bubbles.classList.add("bubble");
           bubbles.style.width = "25px";
