@@ -9,6 +9,7 @@ const projectsPage = document.querySelector(".info-wrap .projects-cont")
 const aboutPage = document.querySelector(".info-wrap .about-cont")
 const contactPage = document.querySelector(".info-wrap .contact-cont")
 const infoWrap = document.querySelector(".info-wrap")
+const mainCont = document.querySelector("main")
 const infoWrapChildren = document.querySelectorAll("#page")
 
 hamburger.addEventListener("click", ()=>{
@@ -43,9 +44,9 @@ function createBubbles(){
           bubbles.classList.add("bubble");
           bubbles.style.width = "25px";
           bubbles.style.height = "25px";
-          bubbles.style.top = Math.floor(Math.random() * 900) + "px";
-          bubbles.style.left = Math.floor(Math.random() *375) + "px";
-          wrap.appendChild(bubbles) 
+          bubbles.style.top = Math.floor(Math.random() * 100) + "%";
+          bubbles.style.left = Math.floor(Math.random() * 100) + "%";
+          mainCont.appendChild(bubbles) 
         }
     }
 

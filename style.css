@@ -40,19 +40,8 @@ nav .logo svg{
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: 300px;
-    position: relative;
-    z-index: 0;
 }
 
-.wrap .water-drops{
-    position: absolute;
-    z-index: 1;
-    bottom: -180px;
-    left: 0;
-    width: 100%;
-    animation: appear 1.5s ease-in;
-    opacity: .6;
-}
 
 .bubble{
     border-radius: 50%;
@@ -112,14 +101,22 @@ nav .logo svg{
 }
 
 .bubble:nth-child(15){
-    animation: bubble-rise 16s ease-in infinite 3s;
+    animation: bubble-rise 7s ease-in infinite 3s;
 }
 
 .bubble:nth-child(16){
-    animation: bubble-rise 15s ease-in infinite 3s;
+    animation: bubble-rise 6s ease-in infinite 3s;
 }
 
 .bubble:nth-child(17){
+    animation: bubble-rise 8s ease-in infinite 2s;
+}
+
+.bubble:nth-child(18){
+    animation: bubble-rise 8s ease-in infinite 2s;
+}
+
+.bubble:last-child{
     animation: bubble-rise 8s ease-in infinite 2s;
 }
 
@@ -192,6 +189,15 @@ main{
     flex-direction: column;
     position: relative;
     z-index: 2;
+}
+
+.water-drops{
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    width: 100%;
+    animation: appear 1.5s ease-in;
+    opacity: .6;
 }
 
 main .intro-wrap{
@@ -427,7 +433,7 @@ main .intro-wrap .text-cover .text.three{
 
 @media screen and (min-width:768px){
 
-.wrap .water-drops{
+.water-drops{
     position: absolute;
     z-index: 1;
     top: 700px;
@@ -464,6 +470,10 @@ nav .logo svg{
 }
 
 /*INFO CONTENT*/
+.content-cont{
+    background-image: url("./images/circles-tablet.svg");
+    background-size: cover;
+}
 
 .content-header{
     width: 100%;
@@ -475,10 +485,6 @@ nav .logo svg{
     min-height: 167px;
 }
 
-.content-cont{
-    background-image: url("./images/circles-tablet.svg");
-    background-size: cover;
-}
 
 .content-header .content-nav{
     padding-top: 30px;
@@ -514,7 +520,100 @@ nav .logo svg{
 }
 
 
+
+/*DESKTOP VIEW*/
+
 @media screen and (min-width:1300px){
+
+    nav{
+        max-width: 1240px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    main{
+        height: 85%;
+        max-width: 1000px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    main .intro-wrap{
+        font-size: 4.5rem;
+        margin-top: 100px;
+
+    }
+
+    .water-drops{
+        position: absolute;
+        z-index: 1;
+        top: 480px;
+        width: 100%;
+        animation: appear 1.5s ease-in;
+        opacity: .6;
+    }
+
+    /*INFO WRAP STYLING****************/
+    .content-header{
+        width: 100%;
+        border-bottom: none;
+        height: 22vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 167px;
+    }
+
+    .info-wrap{
+        width: 80%;
+        max-width: 1240px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .info-wrap .about-me-cont{
+        background-color: white;
+        padding: 40px 70px 0 70px;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url("./images/Wave-about.svg");
+        background-repeat: no-repeat;
+        background-position:bottom;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+      }
+
+    .about-me-cont p{
+        padding-bottom: 35px;
+    }
+
+    .content-cont .info-wrap.projects-height{
+        height: auto;
+    }
+
+    ::-webkit-scrollbar{
+        background-color:transparent;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color:transparent;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        border: solid 5px rgba(14, 95, 138, 0.593);
+        background-color: white;
+    }
 
 
 
