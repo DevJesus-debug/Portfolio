@@ -293,8 +293,8 @@ main .intro-wrap .text-cover .text.three{
 .content-header{
     width: 100%;
     border-bottom: none;
-    height: 27vh;
-    min-height: 167px;
+    height: 32vh;
+    min-height: 227px;
     overflow: hidden;
 }
 
@@ -344,7 +344,7 @@ main .intro-wrap .text-cover .text.three{
  .info-wrap{
   width: 90%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 0;
   margin-bottom: 100px;
   min-height: 630px;
   position: relative;
@@ -405,7 +405,7 @@ main .intro-wrap .text-cover .text.three{
     z-index: 1;
     position: absolute;
     transform: translateX(100%);
-    background-color: blue;
+    background-color: white;
     transition: all .7s ease-in;
 }
 
