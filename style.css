@@ -138,7 +138,7 @@ nav .logo svg{
     }
 
     to{
-        opacity: .6;
+        opacity: .4;
     }
 }
 
@@ -197,7 +197,7 @@ main{
     top: 400px;
     width: 100%;
     animation: appear 1.5s ease-in;
-    opacity: .6;
+    opacity: .4;
 }
 
 main .intro-wrap{
@@ -267,6 +267,36 @@ main .intro-wrap .text-cover .text.three{
     animation: from-left 1s ease-in;
 }
 
+.close-btn{
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-btn .line{
+    height: 5px;
+    width: 100%;
+}
+
+.close-btn .line:nth-child(1){
+    background-color: white;
+    transform: rotate(45deg);
+    margin-bottom: -5px;
+    border-radius: 5px;
+}
+
+.close-btn .line:nth-child(2){
+    background-color: white;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    
+}
+
 
 /*Content styling*******************************/
 
@@ -300,7 +330,7 @@ main .intro-wrap .text-cover .text.three{
 
 .content-header .content-nav{
     max-width: 1440px;
-    padding-top: 40px;
+    padding-top: 50px;
     width: 100%;
     display: flex;
     width: 100%;
@@ -440,7 +470,7 @@ main .intro-wrap .text-cover .text.three{
     left: 0;
     width: 100%;
     animation: appear 1.5s ease-in;
-    opacity: .6;
+    opacity: .4;
 }
 
 main .intro-wrap{
@@ -555,7 +585,7 @@ nav .logo svg{
         top: 480px;
         width: 100%;
         animation: appear 1.5s ease-in;
-        opacity: .6;
+        opacity: .4;
     }
 
     /*INFO WRAP STYLING****************/

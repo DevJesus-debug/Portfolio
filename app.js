@@ -1,5 +1,6 @@
 const wrap = document.querySelector(".wrap");
 const hamburger = document.querySelector(".hamburger")
+const navCloseBtn = document.querySelector(".close-btn")
 const contentCont = document.querySelector(".content-cont")
 const navButtons = document.querySelectorAll(".content-nav button")
 const contactBtn = document.querySelector(".contact-btn")
@@ -13,10 +14,17 @@ const mainCont = document.querySelector("main")
 const infoWrapChildren = document.querySelectorAll("#page")
 
 hamburger.addEventListener("click", ()=>{
-  contentCont.classList.toggle("slide-up")
+  contentCont.classList.add("slide-up")
   navButtons.forEach(button => {
-      button.classList.toggle("btn-slide")
+      button.classList.add("btn-slide")
   });
+})
+
+navCloseBtn.addEventListener("click",()=>{
+  contentCont.classList.remove("slide-up");
+  navButtons.forEach(button => {
+    button.classList.remove("btn-slide")
+});
 })
 
 
